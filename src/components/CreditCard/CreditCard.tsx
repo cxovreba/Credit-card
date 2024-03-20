@@ -4,16 +4,22 @@ import GratitudeCard from "../GratitudeCard/GratitudeCard";
 import Input from "../Input/Input";
 import Title from "../Title/Title";
 import CardDetails from "./CardDetails";
-import styled from "styled-components";
+import { Container, InputContainer, InputStyle, DateAndCvc } from "../../styles/common";
 
 const CreditCard = () => {
-  const [ownerName, setOwnerName] = useState("");
-  const [cardNumber, setCardNumber] = useState("");
-  const [expirationMonth, setExpirationMonth] = useState("");
-  const [expirationYear, setExpirationYear] = useState("");
-  const [cvc, setCvc] = useState("");
-  const [confirmed, setConfirmed] = useState(false);
-  const [alert, setAlert] = useState({
+  const [ownerName, setOwnerName] = useState<string>("");
+  const [cardNumber, setCardNumber] = useState<string>("");
+  const [expirationMonth, setExpirationMonth] = useState<string>("");
+  const [expirationYear, setExpirationYear] = useState<string>("");
+  const [cvc, setCvc] = useState<string>("");
+  const [confirmed, setConfirmed] = useState<boolean>(false);
+  const [alert, setAlert] = useState<{
+    ownerName: string;
+    cardNumber: string;
+    expirationMonth: string;
+    expirationYear: string;
+    cvc: string;
+  }>({
     ownerName: "",
     cardNumber: "",
     expirationMonth: "",
@@ -256,46 +262,3 @@ const CreditCard = () => {
 
 export default CreditCard;
 
-const InputContainer = styled.div`
-  width: 810px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
-  .confirm-btn {
-    margin: 20px;
-  }
-
-  @media (min-width: 1200px) {
-    align-items: start;
-  }
-`;
-
-const InputStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-inline: 20px;
-
-  .month-year {
-    display: flex;
-    gap: 20px;
-  }
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  @media (min-width: 1200px) {
-    flex-direction: row;
-    justify-content: center;
-    gap: 417px;
-  }
-`;
-
-const DateAndCvc = styled.div`
-  display: flex;
-`;
