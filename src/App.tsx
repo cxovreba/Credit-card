@@ -1,4 +1,4 @@
-import CreditCard from "./components/CreditCard/CreditCard";
+import CreditCard from "./components/_organisms/CreditCard/CreditCard";
 
 function App(): JSX.Element {
   return (

@@ -1,4 +1,4 @@
-import { InputType } from "../../types/common";
+import { InputType } from "../../../types/common";
 
 const Input = ({
   type,

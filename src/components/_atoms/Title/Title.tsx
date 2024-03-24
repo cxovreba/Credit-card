@@ -1,4 +1,4 @@
-import { TitleType } from "../../types/common";
+import { TitleType } from "../../../types/common";
 
 const Title = ({
   width,

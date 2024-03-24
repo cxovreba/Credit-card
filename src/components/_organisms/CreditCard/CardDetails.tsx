@@ -1,7 +1,7 @@
-import { CardDetailsType } from "../../types/common";
+import { CardDetailsType } from "../../../types/common";
 import logo from "./Group 15.png";
 import circle from "./Group 8.png";
-import { CreditCard, BackSide, BlackSpace, GreySpace, CardDetailStyle, FrontSide, Gap, CardNumber, NameAndDate, DateStyle } from "../../styles/common";
+import { CreditCard, BackSide, BlackSpace, GreySpace, CardDetailStyle, FrontSide, Gap, CardNumber, NameAndDate, DateStyle } from "../../../styles/common";
 
 const CardDetails = ({
   cardNumber,

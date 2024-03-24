@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Button from "../Button/Button";
+import Button from "../../_molecules/Button/Button";
 import GratitudeCard from "../GratitudeCard/GratitudeCard";
-import Input from "../Input/Input";
-import Title from "../Title/Title";
+import Input from "../../_molecules/Input/Input";
+import Title from "../../_atoms/Title/Title";
 import CardDetails from "./CardDetails";
-import { Container, InputContainer, InputStyle, DateAndCvc } from "../../styles/common";
+import { Container, InputContainer, InputStyle, DateAndCvc } from "../../../styles/common";
 
 const CreditCard = () => {
   const [ownerName, setOwnerName] = useState<string>("");

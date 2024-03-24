@@ -1,4 +1,4 @@
-import { ButtonType } from "../../types/common";
+import { ButtonType } from "../../../types/common";
 
 const Button = ({
   children,
