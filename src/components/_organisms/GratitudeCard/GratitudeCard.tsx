@@ -1,7 +1,7 @@
+import { Button, Image } from "../..";
 import { GratitudeCardContainer, TextInfo } from "../../../styles";
 import { GratitudeCardType } from "../../../types/common";
-import Button from "../../_molecules/Button/Button";
-import Image from "../../_atoms/Image/Image";
+
 
 const GratitudeCard = ({ title, content, setConfirmed }: GratitudeCardType) => {
   return (
